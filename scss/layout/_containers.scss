@@ -1,0 +1,33 @@
+
+body {
+  @media #{$brk-wide}{
+    padding-top: 100px;
+  }
+}
+
+.anchor{
+  display: block;
+  height: 100px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
+
+
+.container {
+  @extend %cont;
+
+	@media #{$brk-narrow}{
+    padding-bottom: 150px;
+  }
+
+  @media #{$brk-wide}{
+    position: relative;
+  }
+}
+
+.service-container{
+	@media #{$brk-narrow}{
+	display: inline-block;
+	width: 100%;
+	}
+}

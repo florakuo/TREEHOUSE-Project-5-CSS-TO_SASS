@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Responsive layout</title>
+	<link rel="stylesheet" href="css/application.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  </head>
+
+<body>
+<div class="wrap">
+
+	<header class="main-header clearfix">
+	 	<div class="container">
+	        <h1 class="name">Flora Kuo</h1>
+			<ul class="main-nav" id="myTopnav">
+					<li><a href="#section1">HOME</a></li>
+					<li><a href="#section2">SKILL</a></li>
+					<li><a href="#section3">PORTFOLIO</a></li>
+					<li><a href="#section4">CONTACT</a></li>
+					<li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+			</ul>
+	 	</div><!--/.container-->		
+	</header>
+   
+   <span class="anchor" id="section1"></span> 
+   <div class="container banner"> 
+		<img class="profile-pic" src="Images/responsive-layout-profile.png" alt="responsive-layout-profile.png">
+			<p class="intro">Hello!I am Front-end developer who loves Responsive Design and CSS.I recently finished learning front end web development at Treehouse and am excited to put all my skills to use.</p>
+	</div><!--/.banner-->  
+
+    <span class="anchor" id="section2"></span>
+    <div class="container">
+	<div class="col skills">	
+        <h2>Skill</h2>
+        <div class="service-container">
+            <div class="service">
+            <div class="logo skill1"></div>
+            <h3>HTML</h3>
+            <p>Clean HTML5 Code</p>
+            </div>
+            
+            <div class="service">  
+            <div class="logo skill2"></div>
+            <h3>CSS</h3>
+            <p>Morden and DRY CSS styles</p>
+            </div>
+            
+            <div class="service">  
+            <div class="logo skill3"></div>
+            <h3>Responsive</h3>
+            <p>User Friendly Website</p>
+            </div>
+        </div><!--/.service-container-->  
+    </div><!--/.col-->          
+    </div><!--/.container-->       
+    
+    <span class="anchor" id="section3"></span>
+    <div class="container">
+    <div class="col portfoliostyle">
+		<h2>PORTFOLIO</h2>
+		 <div class="portfolio" id="portfolio">
+		    <div class="item">
+		    	<img src="Images/portfolio-1.png" alt="portfolio-1">
+			    <div class="desc">
+					<h3>Marketing Page</h3>
+					<p>This project shows the front page of a marketing website for a specific business I'm interested in. </p>
+				</div><!--/.desc-->
+			</div><!--/.item-->
+			<div class="item">
+				<img src="Images/portfolio-2.png" alt="portfolio-2">
+				<div class="desc">
+					<h3>Search Page</h3>
+					<p>This project searches through a specific database to fins information that the user is trying to look up.</p>
+			    </div><!--/.desc-->
+			</div><!--/.item-->
+		    <div class="item">
+		   		<img src="Images/portfolio-3.png" alt="portfolio-3">
+			    <div class="desc">
+					<h3>Travel App</h3>
+					<p>This project compares travel times based on different tramsportation methods and tells you the best one.</p>
+				</div><!--/.desc-->
+			</div><!--/.item-->
+			<div class="item">
+				<img src="Images/portfolio-4.png" alt="portfolio-4">
+				<div class="desc">
+					<h3>Map of Favourite Spots</h3>
+					<p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it-yourself walking tour.</p>
+				</div><!--/.desc-->
+			</div><!--/.item-->
+			<div class="item">
+				<img src="Images/portfolio-5.png" alt="portfolio-5">
+				<div class="desc">
+					<h3>Photo Gallery</h3>
+					<p>This project shows pictures from a recent trip to the viwer and allows them to easily navigate through photos.</p>
+				</div><!--/.desc-->
+			</div><!--/.item-->
+			<div class="item">
+				<img src="Images/portfolio-6.png" alt="portfolio-6">
+				<div class="desc">
+					<h3>Calculator</h3>
+					<p>Someone can enter in the bumbers they want, and press the big blue button and get the result.</p>
+				</div><!--/.desc-->
+			</div><!--/.item-->
+			<div class="item">
+				<img src="Images/portfolio-7.png" alt="portfolio-7">
+				<div class="desc">
+					<h3>Online course</h3>
+					<p>This project allow user to add tag when they 
+					watching video and checking those tags from account </p>
+				</div><!--/.desc-->
+			</div><!--/.item-->
+			<div class="item">
+				<img src="Images/portfolio-8.png" alt="portfolio-8">
+				<div class="desc">
+					<h3>Video gallery</h3>
+					<p>Someone can pin videos they like and make their
+					favourite wall </p>
+				</div><!--/.desc-->
+			</div><!--/.item-->
+			<div class="item">
+				<img src="Images/portfolio-9.png" alt="portfolio-9">
+				<div class="desc">
+					<h3>Video gallery</h3>
+					<p>Someone can pin videos they like and make their
+					favourite wall </p>
+				</div><!--/.desc-->
+			</div><!--/.item-->
+		 </div><!--/.portfolio-->
+		</div><!--/.col-->
+	 </div><!--/.container-->	
+  
+    <span class="anchor" id="section4"></span>
+    <div class="container">
+	<div class="col">	
+		<h2>CONTACT</h2>
+		<p>If you're interested in chatting or want more information about what I've been working on,I'd love to hear form you.</p>
+		<p>Phone <span class="tagline"> +1(111)555-1234</span></p>
+		<p>Email <span class="tagline"> email@yoursite.com</span></p>
+    </div><!--/.col-->
+   </div><!--/.container-->
+
+ </div><!--/.wrap-->   
+
+
+<footer  class="main-footer clearfix">
+	<h1 class="name-fo">Flora Kuo</h1>
+	<p class="back-top"><a href="#section1">Back to top</a></p>
+	<ul class="main-fo">
+		<li><a href="#section1">HOME</a></li>
+		<li><a href="#section2">SKILL</a></li>
+		<li><a href="#section3">PORTFOLIO</a></li>
+		<li><a href="#section3">CONTACT</a></li>
+	</ul>
+</footer>
+<script src="js/jquery-1.12.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>

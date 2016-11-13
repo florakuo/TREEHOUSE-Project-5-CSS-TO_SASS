@@ -1,0 +1,100 @@
+/* ---- Navigation ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	@extend %clearfix;
+
+	@media #{$brk-wide}{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:100px;
+    z-index: 1000;
+    background:$white;
+
+  }
+
+}
+
+.name{
+	font-size:24px;
+	margin:0;
+	float: left;
+	@extend %nav;
+}
+
+.main-nav {
+	margin:0 auto;
+
+	@media #{$brk-wide}{
+	float: right;
+	}
+}
+
+
+.main-nav li{
+	background-color: $white;
+	font-size: .95em;
+	display:none;
+	@extend %nav;
+
+	@media #{$brk-wide}{
+	float: left;
+	}
+}
+
+.main-nav li.icon {
+	float:right;
+	display:inline-block;
+
+	@media #{$brk-narrow}{
+	display: none;
+	}
+
+}
+
+.main-nav.responsive {
+	position:relative;
+}
+
+.main-nav.responsive li.icon {
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.main-nav.responsive li {
+	float:none;
+	display:inline;
+}
+
+.main-nav.responsive li a{
+	display:block;
+	text-align:left;
+}
+
+.name,
+.main-nav li a{
+	color: $yellow-orange;
+
+}
+
+.main-nav li {
+	@extend %nav-li;
+
+}
+
+.main-fo a,
+.main-nav a{
+	display: block;
+	padding: 0 10px;/*使name 跟list在同行*/
+    text-align: center;
+    color:$grey;
+
+}
+
+
+
+
+

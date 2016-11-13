@@ -1,0 +1,160 @@
+/*First section-introduce*/
+.intro {
+  text-align:justify;
+}
+
+
+.profile-pic {
+  @media #{$brk-narrow}{
+  float:right;
+  margin-top: -30px;
+  margin-left:20px;
+  margin-top:-30px;
+  }
+
+  @media #{$brk-wide}{
+  height: 100%;
+  }
+}
+
+
+.banner {
+  padding: 3.2em 0;
+  margin-bottom: 60px;
+
+  @media #{$brk-narrow}{
+  padding-bottom:150px;
+  }
+
+}
+
+
+.col {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+
+
+/*skill*/
+
+.service {
+  margin-top: 40px;
+
+  @media #{$brk-narrow}{
+  width: 30%;
+  text-align: center;
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+  vertical-align: top;
+  }
+}
+
+.service h3 {
+  @media #{$brk-narrow}{
+  padding-top: 5px;
+  display: inline-block;
+  }
+}
+
+.service p {
+  @media #{$brk-narrow}{
+  width: 100%;
+  display: inline-block;
+  }
+}
+
+
+.logo {
+  border:3px solid $color-border-dark;
+  border-radius:50%;
+  width:100px;
+  height:100px;
+  line-height:100px;
+  text-align:center;
+  font-size:2em;
+  float:left;
+  margin-left:20px;
+  margin-top: -4px;
+
+  @media #{$brk-narrow}{
+  float: none;
+  margin: 0 auto;
+  }
+
+}
+
+
+
+.logo::after{
+  font-family: FontAwesome;
+  right: 15px;
+  top: 23px;
+  z-index: 2;
+  width: 20px;
+  text-align: center;
+  color: $yellow-orange ;
+}
+
+.skill1::after {
+  content: "\f1c9";
+}
+
+.skill2::after {
+  content: "\f0d0";
+}
+
+.skill3::after {
+  content: "\f108";
+}
+
+.skills {
+  @media #{$brk-wide}{
+  margin:20px auto;
+  }
+}
+
+
+/*portfolio*/
+.portfoliostyle{
+	background:$white;
+	padding: 2.2em 0;
+	margin-bottom: 60px;
+}
+
+.portfolio{
+  display: -ms-flex;
+  display:flex;
+  max-width:1000px;
+  -ms-flex-pack: distribute;
+  justify-content:space-around;
+  flex-direction: row;
+  flex-wrap:wrap;
+  font-size:14px;
+  margin: 0 auto;
+}
+
+.item {
+  @media #{$brk-narrow}{
+  width:47%;
+  margin:10px 10px;
+  }
+
+  @media #{$brk-wide}{
+  width:32%;
+  margin:5px 5px;
+  }
+}
+
+.desc {
+  @media #{$brk-narrow}{
+  margin: 15px auto;
+  }
+
+  @media #{$brk-wide}{
+  margin:5px auto;
+  }
+}
+
+
