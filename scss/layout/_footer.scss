@@ -6,7 +6,7 @@
 	margin-top: 30px;
 
 
-	@media #{$brk-narrow}{
+	@include tablet{
   	width: 90%;
 	margin: 0 auto;
   	} 
@@ -16,7 +16,7 @@
 .main-fo{
 	visibility: hidden;
 	
-	@media #{$brk-narrow}{
+	@include tablet{
   	visibility:visible;	
 	float: right;
 	margin-right: -115px;
@@ -26,25 +26,29 @@
 .main-fo li{
 	@extend %nav-li;
 
-	@media #{$brk-narrow}{
+	@include tablet{
 	float: left;
 	padding-right: 15px;
 	padding-left:25px;
 	}
 }
 
+.main-fo a {
+	@extend %default-color;
+	@extend %nav-a;
+}
+
 .name-fo{
-	float: left;
+    @extend %float-l;
 
 }
 
 .back-top{
-	float: right;
-	font-weight: 700;
+	@extend %float-r;
 	margin-top: 10px;
-	color:$grey;
+	color:$color-link-visited ;
 	
-	@media #{$brk-narrow}{
+	@include tablet{
 	visibility: hidden;
 	}
 }

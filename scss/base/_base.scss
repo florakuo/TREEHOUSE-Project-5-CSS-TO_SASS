@@ -7,9 +7,9 @@
 }
   
 body{
-  @include text(18px,2.5em, normal, $grey);
+  @include text($font-size,$line-height, normal,$color-text-base);
   font-family:$stack-open-sans;
-  background:$white;
+  background:$color-background ;
   text-align: center;
 
 }
@@ -22,7 +22,7 @@ h1,
 h2,
 a{
 	font-family: $stack-anton;
-	font-size: 18px;
+	font-size: $h1-size;
 
 }
 
@@ -32,7 +32,7 @@ h3 {
 }
 
 h3 {
-	font-size: 20px;
+	font-size: $h3-size;
 }
 
 a {

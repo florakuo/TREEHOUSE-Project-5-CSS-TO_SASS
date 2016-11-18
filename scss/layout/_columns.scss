@@ -5,14 +5,14 @@
 
 
 .profile-pic {
-  @media #{$brk-narrow}{
+  
+  @include tablet{
   float:right;
-  margin-top: -30px;
   margin-left:20px;
   margin-top:-30px;
   }
 
-  @media #{$brk-wide}{
+  @include desktop{
   height: 100%;
   }
 }
@@ -22,7 +22,7 @@
   padding: 3.2em 0;
   margin-bottom: 60px;
 
-  @media #{$brk-narrow}{
+  @include tablet{
   padding-bottom:150px;
   }
 
@@ -41,7 +41,7 @@
 .service {
   margin-top: 40px;
 
-  @media #{$brk-narrow}{
+  @include tablet{
   width: 30%;
   text-align: center;
   display: inline-block;
@@ -52,14 +52,14 @@
 }
 
 .service h3 {
-  @media #{$brk-narrow}{
+  @include tablet{
   padding-top: 5px;
   display: inline-block;
   }
 }
 
 .service p {
-  @media #{$brk-narrow}{
+  @include tablet{
   width: 100%;
   display: inline-block;
   }
@@ -67,18 +67,17 @@
 
 
 .logo {
+  @include text(2em,100px);
+  @extend %float-l;
   border:3px solid $color-border-dark;
   border-radius:50%;
   width:100px;
   height:100px;
-  line-height:100px;
   text-align:center;
-  font-size:2em;
-  float:left;
   margin-left:20px;
   margin-top: -4px;
 
-  @media #{$brk-narrow}{
+  @include tablet{
   float: none;
   margin: 0 auto;
   }
@@ -110,7 +109,7 @@
 }
 
 .skills {
-  @media #{$brk-wide}{
+  @include desktop{
   margin:20px auto;
   }
 }
@@ -131,28 +130,29 @@
   justify-content:space-around;
   flex-direction: row;
   flex-wrap:wrap;
-  font-size:14px;
   margin: 0 auto;
+  font-size:$font-size;
+
 }
 
 .item {
-  @media #{$brk-narrow}{
+  @include tablet{
   width:47%;
   margin:10px 10px;
   }
 
-  @media #{$brk-wide}{
+  @include desktop{
   width:32%;
   margin:5px 5px;
   }
 }
 
 .desc {
-  @media #{$brk-narrow}{
+  @include tablet{
   margin: 15px auto;
   }
 
-  @media #{$brk-wide}{
+  @include desktop{
   margin:5px auto;
   }
 }

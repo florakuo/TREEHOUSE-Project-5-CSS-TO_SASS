@@ -3,52 +3,73 @@
 .main-header {
 	padding-top: .5em;
 	padding-bottom: .5em;
-	@extend %clearfix;
+	
 
-	@media #{$brk-wide}{
+	@include desktop{
     position: fixed;
     top: 0;
     width: 100%;
     height:100px;
     z-index: 1000;
-    background:$white;
+    background:$color-background;
+    
+    clearfix::after {
+    	content: "";
+  		display: block;
+  		clear: both;
+  	}
 
   }
 
 }
 
 .name{
-	font-size:24px;
+ 	@extend %nav;
+ 	@extend %float-l;
+ 	@extend %default-color;
+	font-size:$logo-size;
 	margin:0;
-	float: left;
-	@extend %nav;
+	
 }
 
 .main-nav {
 	margin:0 auto;
 
-	@media #{$brk-wide}{
+	@include desktop{
 	float: right;
 	}
 }
 
 
-.main-nav li{
-	background-color: $white;
-	font-size: .95em;
+.main-nav li {
+    @extend %nav;
+    @extend %nav-li;
+	background: $color-background;
+	font-size: $font-size;
 	display:none;
-	@extend %nav;
+	
 
-	@media #{$brk-wide}{
+	@include desktop{
 	float: left;
 	}
 }
 
+
+
+.main-nav li a{
+	@extend %default-color;
+	@extend %nav-a;
+
+}
+
+
+
+
 .main-nav li.icon {
-	float:right;
+    @extend %float-r;
 	display:inline-block;
 
-	@media #{$brk-narrow}{
+	@include tablet{
 	display: none;
 	}
 
@@ -74,25 +95,6 @@
 	text-align:left;
 }
 
-.name,
-.main-nav li a{
-	color: $yellow-orange;
-
-}
-
-.main-nav li {
-	@extend %nav-li;
-
-}
-
-.main-fo a,
-.main-nav a{
-	display: block;
-	padding: 0 10px;/*使name 跟list在同行*/
-    text-align: center;
-    color:$grey;
-
-}
 
 
 

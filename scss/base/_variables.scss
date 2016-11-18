@@ -18,16 +18,16 @@ $color-text-light    : $white;
 $color-text-base     : $grey;
 $color-text-dark     : $river-bed;
 
-$color-border-light : lighten($grey, 35%);
-$color-border-dark  : $yellow-orange;
+$color-border-light  : lighten($grey, 35%);
+$color-border-dark   : $yellow-orange;
 
-$color-link-default : $yellow-orange;
-$color-link-visited : $regent-st-blue;
+$color-link-default  : $yellow-orange;
+$color-link-visited  : $regent-st-blue;
 
-$color-shadow       : rgba($black,.8);
-$color-body         : $white;
+$color-shadow        : rgba($black,.8);
+$color-body          : $white;
 
-
+$color-background    :$white;
 
 
 
@@ -38,21 +38,27 @@ $stack-open-sans  : "Open Sans", $stack-sans-serif;
 $stack-anton      : "Anton",$stack-sans-serif;
 
 
-//Border radius
 
+//Font size
+$font-size:16px;
+$line-height:$font-size*1.4;
+$h1-size:$font-size*1.6;
+$h3-size:$font-size*1.2;
+$logo-size:$font-size*1.6;
+
+
+//Border radius
 $br:10px;
 
 
 
-
 //Asset path
-
 $path-img    :'../img';
 $path-font   :'../fonts';
 
 
 
-//Media query breakpoints
 
-$brk-narrow:'(min-width: 768px)';
-$brk-wide:'(min-width: 1024px)';
+
+
+

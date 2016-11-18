@@ -1,6 +1,6 @@
 
 body {
-  @media #{$brk-wide}{
+  @include desktop{
     padding-top: 100px;
   }
 }
@@ -16,17 +16,17 @@ body {
 .container {
   @extend %cont;
 
-	@media #{$brk-narrow}{
+	@include tablet{
     padding-bottom: 150px;
   }
 
-  @media #{$brk-wide}{
+  @include desktop{
     position: relative;
   }
 }
 
 .service-container{
-	@media #{$brk-narrow}{
+	@include tablet{
 	display: inline-block;
 	width: 100%;
 	}
