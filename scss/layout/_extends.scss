@@ -1,24 +1,4 @@
-//nav
-%nav {
-	@include tablet {
-  	display: inline-block;
-	background:none;
-	padding: 10px 25px;
-  }
-}
 
-%nav-li {
-	list-style-type:none;
-	margin-top: 5px;
-	margin-left: -45px;
-}
-
-
-%nav-a {
-	display: block;
-	padding: 0 10px;/*使name 跟list在同行*/
-    text-align: center;
-}
 
 //float
 

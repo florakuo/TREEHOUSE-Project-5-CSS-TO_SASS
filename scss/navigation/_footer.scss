@@ -20,23 +20,26 @@
   	visibility:visible;	
 	float: right;
 	margin-right: -115px;
-  	} 
+  	}
+
+  	>li {
+  		@extend %nav-li;
+		@include tablet{
+		float: left;
+		padding-right: 25px;
+		padding-left:25px;
+		}
+
+  	}
+
+  	>a {
+  		@extend %default-color;
+		@extend %nav-a;
+  	}  
 }
 
-.main-fo li{
-	@extend %nav-li;
 
-	@include tablet{
-	float: left;
-	padding-right: 15px;
-	padding-left:25px;
-	}
-}
 
-.main-fo a {
-	@extend %default-color;
-	@extend %nav-a;
-}
 
 .name-fo{
     @extend %float-l;

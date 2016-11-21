@@ -38,62 +38,70 @@
 	@include desktop{
 	float: right;
 	}
-}
 
-
-.main-nav li {
-    @extend %nav;
-    @extend %nav-li;
-	background: $color-background;
-	font-size: $font-size;
-	display:none;
+	>li {
+		@extend %nav;
+    	@extend %nav-li;
+		background: $color-background;
+		font-size: $font-size;
+		display:none;
 	
 
-	@include desktop{
-	float: left;
+		@include desktop{
+		float: left;
+		}
+
+	}
+
+	>li.icon {
+	  	@extend %float-r;
+		display:inline-block;
+
+		@include tablet{
+		display: none;
+	}
+
+
+	}
+
+	a {
+		@extend %default-color;
+		@extend %nav-a;
+
 	}
 }
 
 
 
-.main-nav li a{
-	@extend %default-color;
-	@extend %nav-a;
 
-}
-
-
-
-
-.main-nav li.icon {
-    @extend %float-r;
-	display:inline-block;
-
-	@include tablet{
-	display: none;
-	}
-
-}
 
 .main-nav.responsive {
 	position:relative;
+
+
+	>li.icon {
+		position:absolute;
+		right:0;
+		top:0;
+	}
+
+	>li {
+		float:none;
+		display:inline;
+
+		>a {
+			display:block;
+			text-align:left;
+			margin-top:10px;
+
+		}
+	}
 }
 
-.main-nav.responsive li.icon {
-	position:absolute;
-	right:0;
-	top:0;
-}
 
-.main-nav.responsive li {
-	float:none;
-	display:inline;
-}
 
-.main-nav.responsive li a{
-	display:block;
-	text-align:left;
-}
+
+
 
 
 
