@@ -202,21 +202,19 @@ img {
       width: 100%;
       height: 100px;
       z-index: 1000;
-      background: #fafafa; }
-      .main-header clearfix::after {
-        content: "";
-        display: block;
-        clear: both; } }
+      background: #fafafa;
+      border: orange 1px solid; } }
 
 .name {
   font-size: 25.6px;
-  margin: 0; }
+  border: 1px solid orange; }
 
 .main-nav {
   margin: 0 auto; }
   @media (min-width: 1024px) {
     .main-nav {
-      float: right; } }
+      float: right;
+      border: blue 1px solid; } }
   .main-nav > li {
     background: #fafafa;
     font-size: 16px;
@@ -229,6 +227,11 @@ img {
     @media (min-width: 786px) {
       .main-nav > li.icon {
         display: none; } }
+
+.clearfix {
+  ontent: ".";
+  display: block;
+  clear: both; }
 
 .main-nav.responsive {
   position: relative; }
@@ -286,7 +289,7 @@ img {
 
 .main-nav a, .main-fo > a {
   display: block;
-  padding: 0 10px;
+  padding: 10px 10px;
   /*使name 跟list在同行*/
   text-align: center; }
 

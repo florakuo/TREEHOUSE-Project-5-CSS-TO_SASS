@@ -12,12 +12,8 @@
     height:100px;
     z-index: 1000;
     background:$color-background;
+    border:orange 1px solid;
     
-    clearfix::after {
-    	content: "";
-  		display: block;
-  		clear: both;
-  	}
 
   }
 
@@ -28,7 +24,7 @@
  	@extend %float-l;
  	@extend %default-color;
 	font-size:$logo-size;
-	margin:0;
+	border:1px solid orange;
 	
 }
 
@@ -37,6 +33,7 @@
 
 	@include desktop{
 	float: right;
+	border:blue 1px solid;
 	}
 
 	>li {
@@ -72,7 +69,11 @@
 }
 
 
-
+.clearfix {
+	ontent: "." ; 
+	display: block ;
+	clear: both ;
+}
 
 
 .main-nav.responsive {
